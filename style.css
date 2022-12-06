@@ -45,3 +45,12 @@
     text-align: center;
     font-size: 50px;
 }
+
+.btn-equal{
+    width:400px;
+}
+
+#clear{
+    font-size: 20px;
+    text-align: center;
+}
