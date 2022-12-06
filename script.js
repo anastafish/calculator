@@ -12,7 +12,7 @@ let currentNumber = 0;
 btnEqual.addEventListener('click', () =>{
     num2 = currentNumber;
     if (num1 && num2 && operator){
-        console.log(operate(Number(num1),Number(num2),operator))
+        display.textContent = (operate(Number(num1),Number(num2),operator))
     }
 } )
 
