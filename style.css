@@ -24,7 +24,7 @@
     margin: 10px 0 0 2%;
     flex-grow: 1;
 }
-.btn{
+.btn, .btn-clear, .btn-equal{
     height: 100px;
     width: 80px;
     font-size: 30px;
