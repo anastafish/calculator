@@ -18,15 +18,16 @@ btnEqual.addEventListener('click', () =>{
 
 buttons.forEach(btn =>{
     btn.addEventListener('click', () => {
-        display.textContent += btn.textContent;
+        if (btn.className != "btn-equal btn btn-primary"){
+        display.textContent += btn.textContent;}
         if (num1 === 0){
-        if (btn.className == "btn"){
+        if (btn.className == "btn btn-primary"){
         currentNumber += btn.textContent;
     }
     }
         else {
-            if (btn.className == "btn"){
-            currentNumber += btn.textContent;            
+            if (btn.className == "btn btn-primary"){
+            currentNumber += btn.textContent;   
         }
             
         }        
@@ -64,4 +65,3 @@ function operate(a, b, operation){
         return a / b;
     }
 }
-
