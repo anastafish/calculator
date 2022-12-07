@@ -1,3 +1,7 @@
+body{
+    background-color: cadetblue;
+}
+
 .container{
     display: flex;
     align-items: center;
@@ -7,6 +11,8 @@
     flex-direction: column;
     flex-wrap:wrap;
     border: 2px solid black;
+    margin-top: 10px;
+    background-color: aliceblue;
 }
 
 
