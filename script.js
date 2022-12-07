@@ -14,10 +14,11 @@ btnEqual.addEventListener('click', () =>{
     num2 = currentNumber;
     if (total){
         display.textContent = operate(Number(total), Number(currentNumber), operator)
+        total = Number(display.textContent);
     }
     else if (num1 && num2 && operator){
         display.textContent = (operate(Number(num1),Number(num2),operator))
-        total = display.textContent;
+        total = Number(display.textContent);
     }
 } )
 
@@ -53,6 +54,7 @@ btnClear.addEventListener('click', () => {
     num1 = 0;
     num2 = 0;
     currentNumber = 0;
+    total = 0;
 })
 
 
