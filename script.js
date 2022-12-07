@@ -7,12 +7,17 @@ let num1 = 0;
 let num2 = 0;
 let operator; 
 let currentNumber = 0;
+let total = 0;
 
 
 btnEqual.addEventListener('click', () =>{
     num2 = currentNumber;
-    if (num1 && num2 && operator){
+    if (total){
+        display.textContent = operate(Number(total), Number(currentNumber), operator)
+    }
+    else if (num1 && num2 && operator){
         display.textContent = (operate(Number(num1),Number(num2),operator))
+        total = display.textContent;
     }
 } )
 
